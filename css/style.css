@@ -65,6 +65,14 @@ img {
   height: 200px;
 }
 
+#fig {
+  height: 200px;
+}
+
+.profile {
+  height: 200px;
+}
+
 .main {
   color: blue;
   line-height: 2;
