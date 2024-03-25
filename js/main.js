@@ -11,7 +11,7 @@ function zoomFHD() {
 }
 
 function zoommobile() {
-  nowZoom = 25;
+  nowZoom = 20;
   zooms();
 }
 
