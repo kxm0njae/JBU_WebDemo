@@ -10,6 +10,11 @@ function zoomFHD() {
   zooms();
 }
 
+function zoomFHD() {
+  nowZoom = 20;
+  zooms();
+}
+
 function zooms() {
   document.body.style.zoom = nowZoom + '%';
 }
