@@ -10,8 +10,8 @@ function zoomFHD() {
   zooms();
 }
 
-function zoomFHD() {
-  nowZoom = 20;
+function zoommobile() {
+  nowZoom = 10;
   zooms();
 }
 
