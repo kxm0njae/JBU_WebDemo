@@ -1,40 +1,53 @@
-document.getElementById('time').innerHTML = new Date().toLocaleString();
+let nowZoom = 100;
 
-function Pink() {
-  document.body.style.backgroundColor = 'pink';
+function zoomQHD() {
+  nowZoom = 100;
+  zooms();
 }
 
-function LightBlue() {
-  document.body.style.backgroundColor = 'LightBlue';
+function zoomFHD() {
+  nowZoom = 65;
+  zooms();
 }
 
-function Yellow() {
-  document.body.style.backgroundColor = 'Yellow';
+function zooms() {
+  document.body.style.zoom = nowZoom + '%';
 }
 
-function Linen() {
-  document.body.style.backgroundColor = 'Linen';
+function showhtml_img() {
+  document.getElementById('element_img').src = 'img/HTML5.webp';
 }
 
-function showhtml() {
-  document.getElementById('fig').src = 'img/HTML5.png';
-  document.getElementById('desc').innerHTML =
-    '<b>HTML</b>은 구조적 웹문서를 작성하는데 사용하는 마크업 언어이다.';
+function showcss_img() {
+  document.getElementById('element_img').src = 'img/CSS3.png';
 }
 
-function showcss() {
-  document.getElementById('fig').src = 'img/CSS3.png';
-  document.getElementById('desc').innerHTML =
-    '<b>CSS</b>는 HTML 문서의 스타일을 지정하기 위한 언어이다';
+function showjs_img() {
+  document.getElementById('element_img').src = 'img/JS.jpeg';
 }
 
-function showjs() {
-  document.getElementById('fig').src = 'img/JS.png';
-  document.getElementById('desc').innerHTML =
-    '<b>JS</b>는 웹을 위한 프로그래밍 언어이며 웹문서에서 동작을 실행할 수 있게 한다';
+const clock = document.getElementById('time');
+
+function getClock() {
+  const d = new Date();
+  const h = String(d.getHours()).padStart(2, '0');
+  const m = String(d.getMinutes()).padStart(2, '0');
+  const s = String(d.getSeconds()).padStart(2, '0');
+  clock.innerText = `${h}:${m}:${s}`;
 }
 
-function hide() {
-  document.getElementById('fig').src = '';
-  document.getElementById('desc').innerHTML = '';
+function bg1_active() {
+  document.body.style.backgroundImage = 'url(../img/BG_1.avif)';
+  document.body.style.transition = '1s';
 }
+function bg2_active() {
+  document.body.style.backgroundImage = 'url(../img/BG_2.avif)';
+  document.body.style.transition = '1s';
+}
+function bg3_active() {
+  document.body.style.backgroundImage = 'url(../img/BG_3.avif)';
+  document.body.style.transition = '1s';
+}
+
+getClock();
+setInterval(getClock, 1000);

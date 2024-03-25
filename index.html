@@ -3,65 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo_Assignment_21</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>웹 프로그래밍 데모</title>
   </head>
   <body>
-    <!--메뉴-->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">WebDemo</div>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="container">
+      <header>
+        <h1><a href="./index.html">This_is_Logo (Home) </a></h1>
+        <nav>
+          <ul>
+            <li><a href="./schedule.html">Schedule</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <!--메인 섹션-->
-    <section class="main">
-      <div class="container">
-        <h1>웹프로그래밍. (Web Programming)</h1>
-        <h3>
-          웹 개발자를 위한 온라인 매뉴얼:
-          <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
-          <a href="https://developer.mozilla.org/ko/" target="_blank">MDN</a>
-        </h3>
+      <section class="HTML_BASIC">
+        <article class="main">
+          <h2>웹 프로그래밍 과제</h2>
+          <p>이건 중부대학교의 흔한 웹 프로그래밍 과제입니다.</p>
+          <button onclick="zoomQHD();">2560*1440(QHD)</button>
+          <button onclick="zoomFHD();">1920*1080(FHD)</button>
+        </article>
+        <article class="manuals">
+          <h2>웹 개발자를 위한 온라인 매뉴얼</h2>
+          <p>이미지를 클릭해보세요</p>
+          <div class="W3School">
+            <a href="https://www.w3schools.com/" target="_blank">
+              <img src="./img/W3Schools.jpg" />
+            </a>
+          </div>
+          <div class="MDN">
+            <a href="https://developer.mozilla.org/ko/" target="_blank">
+              <img src="./img/MDN.webp" />
+            </a>
+          </div>
+        </article>
+        <article class="elements">
+          <h2>웹 프로그래밍의 3가지 요소</h2>
+          <div class="element_mouseover">
+            <img id="element_img" src="./img/HTML5.webp" />
+          </div>
 
-        <p>
-          웹프로그래밍의 3가지 기본 요소:
-          <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a> | 
-          <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a> | 
-          <a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a>
-        </p>
+          <button class="HTML_button" onmouseover="showhtml_img()">
+            <a href="https://www.w3schools.com/html/default.asp">HTML5</a>
+          </button>
+          <button class="CSS_button" onmouseover="showcss_img()">
+            <a href="https://www.w3schools.com/css/default.asp">CSS3</a>
+          </button>
+          <button class="JS_button" onmouseover="showjs_img()">
+            <a href="https://www.w3schools.com/js/default.asp">Javascript</a>
+          </button>
+        </article>
+      </section>
 
-        <h3>현재시간: <span id="time"></span></h3>
-        <hr />
-        <p>
-          배경색 바꾸기:
-          <button onclick="Pink()">Pink</button>
-          <button onclick="LightBlue()">LightBlue</button>
-          <button onclick="Yellow()">Yellow</button>
-          <button onclick="Linen()">Linen</button>
-        </p>
+      <section>
+        <article class="bg_change">
+          <h2>배경색 바꾸기</h2>
+          <button onclick="bg1_active()" class="bg1"></button>
+          <button onclick="bg2_active()" class="bg2"></button>
+          <button onclick="bg3_active()" class="bg3"></button>
+        </article>
+      </section>
 
-        <p>
-          배워봅시다:
-          <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
-          <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
-          <button onmouseover="showjs()" onmouseout="hide()">JS</button>
-        </p>
-        </p>
-        <hr />
-        <br>
-        <div>
-          <img id="fig">
-          <p id="desc"></p>
-        </div>
-      </div>
-    </section>
-
+      <footer>
+        <h2>This is Footer <span id="time"></span></h2>
+        <p>kxm**jae@gmail.com</p>
+      </footer>
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>

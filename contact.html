@@ -3,36 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo_Assignment_21</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>웹 프로그래밍 데모</title>
   </head>
   <body>
-    <!--메뉴-->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">WebDemo</div>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="container">
+      <header>
+        <h1><a href="./index.html">This_is_Logo (Home) </a></h1>
+        <nav>
+          <ul>
+            <li><a href="./schedule.html">Schedule</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <!--메인 섹션-->
-    <section class="main">
-      <div class="container">
-        <h1>Contact</h1>
-        <h3>Std. KIM Minki</h3>
-        <p>
-          연락처: 010-519*-****<br />
-          홈페이지: https://github.com/kxm*****<br />
-          이메일: kxm*****@gmail.com<br />
-          안녕하세요..... Hello world<br />
-        </p>
-      </div>
-    </section>
+      <section class="HTML_BASIC">
+        <article class="Schedule_main">
+          <h2>웹 페이지가 마음에 드신다면...</h2>
+          <p>김민기와 팀프로젝트를 위해 연락처를 남겨주세요</p>
+        </article>
 
+        <div class="action_form">
+          <form id="contact" action="" method="post">
+            <fieldset>
+              <input
+                placeholder="이름"
+                type="text"
+                tabindex="1"
+                required
+                autofocus
+              />
+            </fieldset>
+            <fieldset>
+              <input placeholder="이메일" type="email" tabindex="2" required />
+            </fieldset>
+            <fieldset>
+              <input placeholder="전화번호" type="tel" tabindex="3" required />
+            </fieldset>
+            <fieldset>
+              <input
+                placeholder="깃허브, 티스토리 등의 웹 페이지 주소"
+                type="url"
+                tabindex="4"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <textarea
+                placeholder="하고 싶은 말"
+                tabindex="5"
+                required
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <button
+                name="submit"
+                type="submit"
+                id="contact-submit"
+                data-submit="...Sending"
+              >
+                보내기
+              </button>
+            </fieldset>
+          </form>
+        </div>
+
+        <article class="bg_change_sc">
+          <button onclick="bg1_active()" class="bg1"></button>
+          <button onclick="bg2_active()" class="bg2"></button>
+          <button onclick="bg3_active()" class="bg3"></button>
+        </article>
+      </section>
+
+      <footer>
+        <h2>This is Footer <span id="time"></span></h2>
+        <p>kxm**jae@gmail.com</p>
+      </footer>
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>

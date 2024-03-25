@@ -1,94 +1,382 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: linen;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/BG_3.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-ul {
-  list-style-type: none;
+#container h1 h2 p {
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.navbar {
-  background-color: black;
-  color: white;
-  height: 60px;
-}
-
-.navbar .container {
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 0.5rem 5rem 0.5rem 3rem;
+  background-color: rgba(0, 0, 0, 0.747);
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
 
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.navbar ul li {
-  margin-left: 20px;
-}
-
-.navbar .logo {
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.navbar a {
+header a {
   color: white;
-  text-decoration: none;
-  font-size: 18px;
+}
+
+nav ul li {
+  display: inline-flex;
+  margin-left: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar a:hover {
-  border-bottom: 2px #fff solid;
-  color: #ddd;
+article.main {
+  padding: 20rem 0rem 20rem 10rem;
+  font-size: 3.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-img {
-  height: 200px;
+article.main button {
+  width: fit-content;
+  background: none;
+  padding: 1rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 1.5rem;
+  font-size: 2rem;
 }
 
-#fig {
-  height: 200px;
+article.main button:hover {
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.548);
 }
 
-.profile {
-  height: 200px;
+article.manuals {
+  padding: 10rem 0rem 50rem 10rem;
+  font-size: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.main {
-  color: blue;
-  line-height: 2;
+article.manuals h2 {
+  margin-bottom: 0;
 }
 
-button {
-  padding: 5px 10px;
-  margin: 4px 6px;
-  font-size: large;
+article.manuals p {
+  margin: 0.3rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+article.manuals img {
+  padding-top: 5rem;
+  margin-right: 10rem;
+  height: 30rem;
+  float: left;
+}
+
+article.elements h2 {
+  line-height: 100%;
+  margin: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0;
+}
+
+article.elements {
+  padding: 10rem 0rem 70rem 10rem;
+  font-size: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+article.elements button.HTML_button {
+  background-color: rgb(255, 115, 56);
+}
+
+article.elements button.HTML_button:hover {
+  transition: 0.3s;
+  background-color: rgb(211, 98, 49);
+}
+
+article.elements button.CSS_button {
+  background-color: rgb(54, 200, 253);
+}
+
+article.elements button.CSS_button:hover {
+  transition: 0.3s;
+  background-color: rgb(44, 165, 209);
+}
+
+article.elements button.JS_button {
+  background-color: rgb(255, 211, 36);
+}
+
+article.elements button.JS_button:hover {
+  transition: 0.3s;
+  background-color: rgb(207, 172, 30);
+}
+
+article.elements button {
   font-weight: bolder;
-  background-color: aquamarine;
-  border-radius: 1px;
-  border-width: 2px;
+  float: right;
+  margin-right: 11rem;
+  border-radius: 2rem;
+  border: none;
+  text-align: center;
+  margin-bottom: 2.1rem;
+  font-size: 2.5rem;
+  color: black;
+  width: 45rem;
+  height: 10rem;
+  position: relative;
+  top: 5rem;
 }
 
-button:hover {
-  color: red;
-  background-color: chocolate;
+article.elements p {
+  font-size: 2rem;
+}
+
+#element_img {
+  height: 35rem;
+}
+
+article.elements img {
+  padding-top: 5rem;
+  margin-right: 10rem;
+  height: 30rem;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+article.bg_change {
+  padding: 0rem 0rem 30rem 10rem;
+  font-size: 3.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+article.bg_change button {
+  width: 30rem;
+  height: 30rem;
+  border: none;
+  border-radius: 15rem;
+  margin-right: 5rem;
+  font-size: 3rem;
+}
+
+.bg1 {
+  background-image: url(../img/BG_1.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  background-image: url(../img/BG_2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg3 {
+  background-image: url(../img/BG_3.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Schedule_main {
+  padding: 4rem 0rem 15rem 10rem;
+  font-size: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+article.Schedule_main button {
+  width: fit-content;
+  background: none;
+  padding: 1rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 1.5rem;
+  font-size: 2rem;
+}
+
+article.Schedule_main button:hover {
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.548);
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0rem 0rem 2rem 10rem;
+  position: relative;
+  top: -10rem;
+}
+.tg td {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 1.2rem;
+  padding: 1rem;
+  height: 3rem;
+}
+.tg th {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.tg .tg-eyou {
+  background-color: #ffc385;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-ny41 {
+  background-color: #ffcccc;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-ph8u {
+  background-color: #f2d5ff;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-dkv8 {
+  background-color: #fff7ac;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-baqh {
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-tvyr {
+  background-color: #a6ffe2;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-c3ow {
+  border-color: inherit;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-1pbf {
+  background-color: #d5ffb5;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-i53b {
+  background-color: #9ddaff;
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+
+article.bg_change_sc {
+  padding: 0rem 0rem 10rem 10rem;
+  font-size: 3.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+article.bg_change_sc button {
+  width: 20rem;
+  height: 20rem;
+  border: none;
+  border-radius: 10rem;
+  margin-right: 2.5rem;
+  font-size: 3rem;
+}
+
+.action_form {
+  width: 70rem;
+  margin-left: 10rem;
+  position: relative;
+  top: -10rem;
+}
+
+#contact input[type='text'],
+#contact input[type='email'],
+#contact input[type='tel'],
+#contact input[type='url'],
+#contact textarea,
+#contact button[type='submit'] {
+  font-size: 2rem;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 2rem;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type='text'],
+#contact input[type='email'],
+#contact input[type='tel'],
+#contact input[type='url'],
+#contact textarea {
+  width: 100%;
+  border: none;
+  background: #fff;
+  padding: 2rem;
+}
+
+#contact textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px;
+  max-width: 100%;
+}
+
+#contact button[type='submit'] {
+  width: 20rem;
+  border: none;
+  border-radius: 10rem;
+  background: #0cf;
+  color: #fff;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+#contact button[type='submit']:hover {
+  background: #09c;
+  width: 21rem;
+  border: none;
+  border-radius: 10rem;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 18rem;
+  line-height: 11rem;
+  padding: 3rem;
+  padding-left: 10rem;
+  font-size: 2rem;
+  text-align: left;
+}
+
+footer h2 {
+  height: 0;
 }
