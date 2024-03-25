@@ -367,6 +367,10 @@ fieldset {
 }
 
 footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
   background-color: black;
   color: white;
   height: 18rem;
