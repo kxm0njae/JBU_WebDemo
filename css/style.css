@@ -338,6 +338,7 @@ fieldset {
   width: 100%;
   border: none;
   background: #fff;
+  border-radius: 2rem;
   padding: 2rem;
 }
 
@@ -350,7 +351,7 @@ fieldset {
 #contact button[type='submit'] {
   width: 20rem;
   border: none;
-  border-radius: 10rem;
+  border-radius: 3rem;
   background: #0cf;
   color: #fff;
   margin: 0 0 1rem;
@@ -362,7 +363,7 @@ fieldset {
   background: #09c;
   width: 21rem;
   border: none;
-  border-radius: 10rem;
+  border-radius: 3rem;
   transition: 0.3s ease-in-out;
 }
 
